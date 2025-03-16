@@ -9,7 +9,7 @@ document.getElementById('risk-form').addEventListener('submit', async function (
   const familyDiseases = Array.from(document.querySelectorAll('input[name="family-disease"]:checked')).map(el => el.value);
 
   // Send data to the backend API
-  const response = await fetch('https://your-api-url.azurewebsites.net/api/calculate-risk', {
+  const response = await fetch('https://Calculate-risk-functions.azurewebsites.net/api/calculate-risk', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
